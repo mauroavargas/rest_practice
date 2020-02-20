@@ -1,14 +1,11 @@
-const express = require('express');
-const server = express();
-const PORT = process.env.PORT || 4000;
+// Long way
+// const object = require('./server');
+// const PORT = object.PORT;
+// const server = object.server;
 
-// Endpoints ES6
-server.get('/', (req, res) => res.send('Hello Guys!'));
+// Short way
+const { server, PORT } = require('./server'); 
 
-// Endppoint JS Vanilla
-server.get('/prueba', function(req, res){
-    res.send('Hello Prueba!');
-});
 
 // Turn the server ON
-server.listen(PORT, () => console.log(`Server on port ${PORT}!`));
+server.listen(PORT, () => console.log('Server on port', PORT));

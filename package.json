@@ -1,0 +1,24 @@
+{
+  "name": "app-api",
+  "version": "0.0.1",
+  "description": "REST API Cinta Negra",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "devf",
+    "backend",
+    "api",
+    "rest",
+    "express"
+  ],
+  "author": "Mauro Vargas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
